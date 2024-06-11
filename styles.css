@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --clr-background: #D4E7C5;
+  --clr-gray: rgb(119, 114, 114);
+  --font-main: "Montserrat", sans-serif;
+  --clr-dark-gray: #262626;
+  --clr-dark-black: #333;
+  --clr-dark-text: rgb(226, 225, 225);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Hind Madurai", sans-serif;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRllN6L6Q96XiiTmYe-AbjV8pcGsd76jtyW2g&s');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.wrapper {
+  background-color: var(--clr-background);
+}
+
+/* -------------------------Header/Navbar */
+header {
+  font-family: var(--font-main);
+  padding-top: 30px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.navbar__ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  width: 100%;
+  max-width: 500px;
+}
+
+.navbar__ul .name {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.navbar__ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar__ul li {
+  background: rgba(235, 230, 230, 0.3);
+  width: 50%;
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.link,
+.portfolio__header,
+footer h2 {
+  text-transform: uppercase;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  border-radius: 50px;
+}
+
+.header__text__container {
+  width: 100%;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.header__text {
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+img {
+  border-radius: 50%;
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.portfolio {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio__header {
+  font-size: 23px;
+  padding-bottom: 2rem;
+}
+
+.portfolio__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  border-radius: 5px;
+  background: #fff;
+  width: 250px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.text-container {
+  padding: 15px;
+  text-align: center;
+}
+
+.text-container h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.text-container p {
+  font-size: 14px;
+  color: var(--clr-gray);
+}
+
+/* -------------------------Skills */
+.skills {
+  width: 100%;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.skills h2 {
+  font-size: 23px;
+  padding-bottom: 2rem;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills__item {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills__item img {
+  width: 60px;
+  height: 60px;
+}
+
+.skills__item p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: var(--clr-dark-gray);
+}
+
+/* -------------------------Footer */
+footer {
+  background: var(--clr-background);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+footer h2 {
+  font-size: 23px;
+}
+
+footer p {
+  font-size: 14px;
+  color: var(--clr-gray);
+}
+
+footer hr.footer__nav-hr {
+  border-top: 1px solid var(--clr-dark-black);
+  width: 80%;
+  margin: 20px auto;
+}
+
+.footer__nav {
+  text-align: center;
+}
+
+.footer__nav h3 {
+  font-size: 20px;
+}
+
+.footer__nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.footer__nav-links a {
+  text-decoration: none;
+  color: var(--clr-dark-black);
+  margin: 5px 0;
+}
+
+.footer__text-container,
+.footer__text-container1 {
+  text-align: center;
+}
+
+.footer__text-container1 p {
+  margin: 10px 0;
+}
+
+.to-top a {
+  color: var(--clr-dark-black);
+  font-weight: bold;
+}
